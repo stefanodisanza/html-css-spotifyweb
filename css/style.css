@@ -3,15 +3,24 @@
 	padding: 0;
 	box-sizing: border-box;
     color: white;
+    
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 img {
 	width: 100%;
+    display: block;
 }
 
 :root {
 	--darkblue: #141922;
-    --gray: #282828;
+    --darkgray: #282828;
+    --gray: #838383;
+
 }
 
 ul,
@@ -39,7 +48,7 @@ body{
 }
 
 .player{
-    background-color: var(--gray);
+    background-color: var(--darkgray);
     height: 90px;
     flex-shrink: 0;
     display: flex;
@@ -58,7 +67,7 @@ body{
     flex-grow: 1;
 }
 
-/* MEDIAQUERY */
+/* MEDIAQUERY MAIN STRUCTURE*/
 
 @media screen and (max-width: 552px) {
     .sidebar{
@@ -68,10 +77,6 @@ body{
 
 /* sezione player */
 
-
-.album-player{
-    border: 1px solid  white;
-}
 
 .media-player{
     border: 1px solid white;
@@ -90,9 +95,50 @@ body{
 .button-player{
     border: 1px solid greenyellow;
     
+}
 
 .reproduction-player{
     border: 1px solid greenyellow;
     width: 100%;
     text-align: center;
+}
+
+.album-player{
+    display: flex;
+    align-items: center;
+}
+
+.album-cover-player{
+    width: 42px;
+    
+}
+
+.info-song{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-right: 40px;
+}
+
+.brano-player{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.artist-player{
+    font-size: 8px;
+    color: var(--gray);
+}
+
+.icon-small{
+    color: var(--gray);
+    margin-right: 15px;
+    
+}
+
+@media screen and (max-width: 878px) {
+    .icon-group{
+        display: flex;
+        flex-direction: column;
+    }
 }
