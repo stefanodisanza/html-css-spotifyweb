@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+}
+
+:root {
+	--darkblue: #141922;
+    --gray: #282828;
+}
+
+ul,
+ol,
+menu,
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-webapp{
+    background-color: var(--darkblue);
+    flex-grow: 1;
+    display: flex;
+}
+
+.player{
+    background-color: var(--gray);
+    height: 90px;
+    flex-shrink: 0;
+}
+
+.sidebar{
+    background-color: black;
+    width: 230px;
+    flex-shrink: 0;
+}
+
+.home{
+    flex-grow: 1;
+}
+
+/* MEDIAQUERY */
+
+@media screen and (max-width: 552px) {
+    .sidebar{
+        width: 50px;
+    }	
+}
+
+/* sezione player */
