@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+    color: white;
 }
 
 img {
@@ -41,6 +42,10 @@ body{
     background-color: var(--gray);
     height: 90px;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .sidebar{
@@ -62,3 +67,32 @@ body{
 }
 
 /* sezione player */
+
+
+.album-player{
+    border: 1px solid  white;
+}
+
+.media-player{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    
+}
+
+.volume-player{
+    border: 1px solid white;
+    
+}
+
+.button-player{
+    border: 1px solid greenyellow;
+    
+
+.reproduction-player{
+    border: 1px solid greenyellow;
+    width: 100%;
+    text-align: center;
+}
