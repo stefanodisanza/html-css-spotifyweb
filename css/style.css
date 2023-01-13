@@ -196,4 +196,58 @@ body{
 
 .svg-icon{
     width: 22px;
+    display: inline;
+}
+
+.logo-big{
+    width: 132px;
+    margin: 20px;
+    border: 2px solid orange;
+}
+
+.logo-small{
+    display: none;
+}
+
+.sidebar-items{
+    margin: 12px 20px;
+    border: 2px solid orange;
+}
+
+.playlist-title{
+    margin-left: 20px;
+    margin-top: 18px;
+    
+}
+.fa-square-plus{
+    font-size: 38px;
+    margin: 10px 10px 20px 20px;
+}
+
+.nome-playlist li{
+    margin: 12px 20px 12px 20px;
+}
+
+.playlist-container{
+    border: 2px solid orange;
+}
+
+
+@media  screen and (max-width:552px) {
+
+    .svg-icon-name,
+    .logo-big{
+        display: none;
+    }
+
+    .logo-small{
+        display: block;
+        width: 30px;
+        
+    }
+    .sidebar-items{
+        text-align: center;
+        
+    }
+    
 }
