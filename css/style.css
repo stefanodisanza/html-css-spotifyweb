@@ -58,6 +58,8 @@ body{
 }
 
 .sidebar{
+    display: flex;
+    flex-direction: column;
     background-color: black;
     width: 230px;
     flex-shrink: 0;
@@ -73,6 +75,8 @@ body{
     .sidebar{
         width: 50px;
     }	
+
+
 
 
 }
@@ -156,6 +160,13 @@ body{
     margin: 0 25px;
 }
 
+.barra-indicator{
+    height: 5px;
+    background-color: white;
+    border-radius: 20px;
+    width: 20%;
+    }
+
 
 
 @media screen and (max-width: 878px) {
@@ -190,6 +201,14 @@ body{
     
 }
 
+.volume-impostato{
+    height: 5px;
+    background-color: white;
+    border-radius: 20px;
+    width: 47%;
+    
+}
+
 /* SEZIONE SIDEBAR */
 
 
@@ -201,8 +220,7 @@ body{
 
 .logo-big{
     width: 132px;
-    margin: 20px;
-    border: 2px solid orange;
+    margin: 20px;    
 }
 
 .logo-small{
@@ -210,8 +228,7 @@ body{
 }
 
 .sidebar-items{
-    margin: 12px 20px;
-    border: 2px solid orange;
+    margin: 12px 20px;    
 }
 
 .playlist-title{
@@ -228,8 +245,8 @@ body{
     margin: 12px 20px 12px 20px;
 }
 
-.playlist-container{
-    border: 2px solid orange;
+.playlist-container{    
+    margin-bottom: auto;
 }
 
 
@@ -240,14 +257,94 @@ body{
         display: none;
     }
 
+    .container-loghi{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .logo-small{
         display: block;
         width: 30px;
+       margin: 14px 0;
+        
         
     }
     .sidebar-items{
         text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 14px 0;
+        
+    }
+
+    .my-profile{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 14px 0;
+    }
+
+    .playlist-container{
+        display: none;
+    }
+
+    .sidebar-items{
+        margin-bottom: auto;
+    }
+
+    .installa-app{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 14px 0;
         
     }
     
 }
+
+.installa-app{
+    display: flex;
+    align-items: center;
+    margin: 12px 20px 12px 20px;
+    gap: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+  
+}
+
+.my-profile{
+    display: flex;
+    align-items: center;
+    margin: 12px 20px 12px 20px;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.profile-icon{
+    display: flex;
+    align-items: center;
+    background-color: var(--gray);
+    width: 25px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* SEZIONE HOME */
+
+.effettua-upgrade{
+    background-color: #090B12;
+    height: 90px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.button-transparent{
+    margin-right: 15px;
+    padding: 15px 30px;
+    border: 1px solid white;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
