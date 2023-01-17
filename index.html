@@ -9,41 +9,43 @@
     <script src="https://kit.fontawesome.com/47e16b9a1e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="container-webapp">
+<body class="app">
+    <div class="content">
         <!-- SEZIONE SIDEBAR -->
         <div class="sidebar">
-            <figure class="container-loghi">
+            <div class="container-loghi">
                 <img class="logo-big" src="./img/logo.svg" alt="logo">   
                 <img src="./img/logo-small.svg" alt="" class="logo-small">             
-            </figure>
+            </div>
             
             <ul class="sidebar-items">
-                <li>
+                <li class="main-menu_item active">
                     <img class="svg-icon" src="./img/home.svg" alt=""> 
                     <span class="svg-icon-name">Home</span>
                 </li>
-                <li>
+                <li class="main-menu_item">
                    <img class="svg-icon" src="./img/search.svg" alt="">
                    <span class="svg-icon-name">Cerca</span>
                 </li>
-                <li>
+                <li class="main-menu_item">
                    <img class="svg-icon" src="./img/libreria.svg" alt="">
                     <span class="svg-icon-name">La tua libreria</span>
                 </li>
             </ul>
             <div class="playlist-container">                
                 <h4 class="playlist-title">PLAYLIST</h4>
-                <i class="fa-solid fa-square-plus"></i>
-                <span>Crea Playlist</span>
+                <div class="container-plus-playlist">
+                    <i class="fa-solid fa-square-plus"></i>
+                    <span class="crea-playlist">Crea Playlist</span>
+                </div>
                 <ul class="nome-playlist">
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
+                    <li> Nome Playlist</li>
+                    <li> Nome Playlist</li>
+                    <li> Nome Playlist</li>
+                    <li> Nome Playlist</li>
+                    <li> Nome Playlist</li>
+                    <li> Nome Playlist</li>
+                    <li> Nome Playlist</li>
                 </ul>
             </div>
             <div class="installa-app">
@@ -62,10 +64,12 @@
             </div>
             <nav class="nav-generi">
                 <ul class="generi-musicali">
-                    <li class="item-generi">IN EVIDENZA</li>
+                    <li class="item-generi">IN EVIDENZA 
+                        <div class="trattino-verde"></div>
+                    </li>
                     <li class="item-generi">PODCAST</li>
                     <li class="item-generi">CLASSIFICHE</li>
-                    <li class="item-generi">GENERO E MOOD</li>
+                    <li class="item-generi">GENERI E MOOD</li>
                     <li class="item-generi">NUOVE USCITE</li>
                     <li class="item-generi">SCOPRI</li>                
             
@@ -85,8 +89,8 @@
                         <figure>
                             <img src="./img/stranger.jpeg" alt="">
                         </figure>
-                        <h4>Stranger Thinggs, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
-                        <h6>Kyle Dixon & Michael Stein</h6>
+                        <h4>Heavy Metal</h4>
+                        <h6>Subtitle</h6>
                     </div>
                     <div class="col-6">
                         <figure>
@@ -116,6 +120,7 @@
                         <h4>Sinisterl</h4>
                         <h6>Subtitle</h6>
                     </div>
+                    
                 </div>
             </div>
             <div class="container-album-recenti">
@@ -136,6 +141,7 @@
                         <h4>Daily Mix 1</h4>
                         
                     </div>
+                    
                     
                 </div>
             </div>

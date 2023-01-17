@@ -35,38 +35,43 @@ a {
 	color: currentColor;
 }
 
-body{
+.app{
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.container-webapp{
+.content{
     background-color: var(--darkblue);
     flex-grow: 1;
     display: flex;
+    overflow: hidden;
 }
+
 
 .player{
     background-color: var(--darkgray);
-    height: 90px;
+    height: 90px;    
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    
 }
 
 .sidebar{
     display: flex;
     flex-direction: column;
     background-color: black;
-    width: 230px;
+    width: 230px;    
     flex-shrink: 0;
+    
 }
 
 .home{
     flex-grow: 1;
+    overflow: auto;
 }
 
 /* MEDIAQUERY MAIN STRUCTURE*/
@@ -216,7 +221,43 @@ body{
 .svg-icon{
     width: 22px;
     display: inline;
+    
 }
+
+
+.main-menu_item{
+    padding: 12px 20px;
+    position: relative;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.main-menu__item:hover,
+.main-menu__item.active {
+	opacity: 1;
+}
+
+.main-menu_item::before {
+    content: '';
+    display: none;
+    width: 4px;
+    background-color: greenyellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    
+}
+
+.main-menu__item:hover::before,
+.main-menu__item.active::before {
+	display: block;
+}
+
+
 
 .logo-big{
     width: 132px;
@@ -228,7 +269,7 @@ body{
 }
 
 .sidebar-items{
-    margin: 12px 20px;    
+   position: relative; 
 }
 
 .playlist-title{
@@ -239,10 +280,23 @@ body{
 .fa-square-plus{
     font-size: 38px;
     margin: 10px 10px 20px 20px;
+    opacity: 0.7;
 }
 
 .nome-playlist li{
-    margin: 12px 20px 12px 20px;
+    padding: 12px 20px 12px 20px;
+    opacity: 0.7;
+}
+
+.container-plus-playlist{
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.crea-playlist{
+    opacity: 0.7;
 }
 
 .playlist-container{    
@@ -274,7 +328,9 @@ body{
         text-align: center;
         align-items: center;
         justify-content: center;
-        margin: 14px 0;
+        margin: 14px 0; 
+        padding-left: 0;
+        padding-right: 0;    
         
     }
 
@@ -332,6 +388,7 @@ body{
 
 /* SEZIONE HOME */
 
+
 .effettua-upgrade{
     background-color: #090B12;
     height: 90px;
@@ -358,10 +415,12 @@ body{
 
 .generi-musicali{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 20px;
     padding: 25px 10px;
+    position: relative;
     
 }
 
@@ -369,17 +428,29 @@ body{
     color: var(--gray);
 }
 
+.trattino-verde{    
+    height: 2px;
+    background-color: greenyellow;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
 .row-album{
     display: flex;
-    gap: 14px;
+    flex-wrap: wrap;
+    /* gap: 14px; */
 }
 
 .col-6{
     flex-basis: calc(100% / 6);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 14px;
+    
     
 }
 
@@ -394,4 +465,65 @@ body{
 
 .circle-artist{
     border-radius: 50%;
+}
+
+h5,
+h6{
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 878px) {
+    .col-6{
+        flex-basis: calc(100% / 4);
+        
+        
+    }
+
+    
+}
+
+@media  screen and (max-width:552px){
+    .col-6{
+        flex-basis: calc(100% / 2);
+    }
+}
+
+/* REGOLE HOVER */
+
+span:hover{
+    color: white;
+    opacity: 1;
+}
+
+.nome-playlist:hover{
+    opacity: 1;
+}
+
+li:hover{
+    color: white;
+    opacity: 1;
+}
+
+h5,
+h6:hover{
+    opacity: 1;
+}
+
+.button-transparent:hover{
+    padding: 20px 35px;
+    
+}
+
+.icon-gray:hover{
+    color: white;
+}
+
+.button-player :nth-child(3):hover {
+    font-size: 35px;
+}
+
+.barra-indicator:hover,
+.volume-impostato:hover{
+    
+    background-color: greenyellow;
 }
