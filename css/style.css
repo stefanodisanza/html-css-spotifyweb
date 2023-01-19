@@ -522,8 +522,16 @@ h6:hover{
     font-size: 35px;
 }
 
-.barra-indicator:hover,
-.volume-impostato:hover{
+
+
+
+.barra-indicator,
+.volume-impostato{
+    background-color:white;
     
+}
+
+.barra-riproduzione:hover .barra-indicator{
     background-color: greenyellow;
+    
 }
